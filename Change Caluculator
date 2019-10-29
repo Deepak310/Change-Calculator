@@ -1,0 +1,38 @@
+class Main {
+  public static void main(String[] args) {
+ double x = 1000;
+ double y = 145;
+ System.out.println(x-y);
+  double z = x - y;
+double hundred = z / 100;
+hundred = (int) hundred;
+System.out.println("Hundreds : " + hundred);
+double fifty = (z % 100) / 50;
+fifty = (int) fifty;
+System.out.println("Fifties : " + fifty);
+double twenty = ((z % 100)%50) / 20;
+twenty = (int) twenty;
+System.out.println("twenties : " + twenty);
+double ten = (((z % 100)%50)%20) / 10;
+ten = (int) ten;
+System.out.println("tens : " + ten);
+double five = ((((z % 100)%50)%20)%10) / 5;
+five = (int) five;
+System.out.println("fives : " + five);
+double one = (((((z % 100)%50)%20)%10)%5) / 1;
+one = (int) one;
+System.out.println("ones : " + one);
+double quater = ((((((z % 100)%50)%20)%10)%5)%1) / 0.25;
+quater = (int) quater;
+System.out.println("quarters : " + quater);
+double dime = (((((((z % 100)%50)%20)%10)%5)%1)%0.25) / 0.1;
+dime = (int) dime;
+System.out.println("dimes : " + dime);
+double nickel = ((((((((z % 100)%50)%20)%10)%5)%1)%0.25)%0.1) / 0.05;
+nickel = (int) nickel;
+System.out.println("nickels : " + nickel);
+double penny = (((((((((z % 100)%50)%20)%10)%5)%1)%0.25)%0.1)%0.05) / 0.01;
+penny = (int) penny;
+System.out.println("pennies : " + penny);
+  }
+}
